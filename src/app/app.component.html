@@ -2,7 +2,10 @@
   <h1>Kendo Learning</h1>
   <div class="container">
     @for (course of courses; track course) {
-      <app-course-card [course]="course" />
+      <app-course-card [course]="course">
+        <h3 class="title">{{ course.title }}</h3>
+        <span>100%</span>
+      </app-course-card>
     }
   </div>
 </div>
