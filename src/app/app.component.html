@@ -1,7 +1,8 @@
 <div>
   <h1>Kendo Learning</h1>
   <div class="container">
-
+    @for (course of courses; track course) {
+      <app-course-card [course]="course" />
+    }
   </div>
-
 </div>

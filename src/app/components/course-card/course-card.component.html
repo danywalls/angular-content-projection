@@ -1,13 +1,13 @@
 <div class="course-container">
   <div class="course-thumbnail">
-    <img src="../../../assets/angular.jpeg"/>
+    <img [src]="course().image"/>
     <div class="course-status">
       New
     </div>
   </div>
-  <h3 class="title">Angular 17</h3>
+  <h3 class="title">{{ course().title }}</h3>
   <div class="course-footer">
-    <span>🕧 3h 00m</span>
-    <span>5 ⭐</span>
+    <span>🕧 {{ course().timeSpan }}</span>
+    <span>{{course().rank}} ⭐</span>
   </div>
 </div>
