@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {Course, CourseCardComponent} from "./components/course-card/course-card.component";
+import {ThumbnailAreaDirective} from "./directives/thumbnail-area.directive";
+import {TitleAreaDirective} from "./directives/title-area.directive";
+import {FooterAreaDirective} from "./directives/footer-area.directive";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CourseCardComponent],
+  imports: [RouterOutlet, CourseCardComponent, ThumbnailAreaDirective, TitleAreaDirective, FooterAreaDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

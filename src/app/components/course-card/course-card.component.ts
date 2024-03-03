@@ -1,4 +1,7 @@
 import {Component, input} from '@angular/core';
+import {ThumbnailAreaDirective} from "../../directives/thumbnail-area.directive";
+import {FooterAreaDirective} from "../../directives/footer-area.directive";
+import {TitleAreaDirective} from "../../directives/title-area.directive";
 
 export type Course = {
   title: string;
@@ -9,10 +12,10 @@ export type Course = {
 @Component({
   selector: 'app-course-card',
   standalone: true,
-  imports: [],
+  imports: [ThumbnailAreaDirective, FooterAreaDirective, TitleAreaDirective],
   templateUrl: './course-card.component.html',
   styleUrl: './course-card.component.css'
 })
 export class CourseCardComponent {
-  course = input.required<Course>()
+
 }

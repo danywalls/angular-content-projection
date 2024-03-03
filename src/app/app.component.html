@@ -2,9 +2,20 @@
   <h1>Kendo Learning</h1>
   <div class="container">
     @for (course of courses; track course) {
-      <app-course-card [course]="course">
-        <h3 class="title">{{ course.title }}</h3>
-        <span>100%</span>
+      <app-course-card>
+        <ng-container appThumbnailArea>
+          <img [src]="course.image" [alt]="course.title" />
+        </ng-container>
+
+        <ng-container appTitleArea>
+          <h3 class="title">{{ course.title }}</h3>
+          <span>Author: Telerik</span>
+        </ng-container>
+
+        <ng-container appFooterArea>
+          <span>🕧 {{ course.timeSpan }}</span>
+          <span>{{ course.rank }} ⭐</span>
+        </ng-container>
       </app-course-card>
     }
   </div>

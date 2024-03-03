@@ -1,13 +1,13 @@
 <div class="course-container">
   <div class="course-thumbnail">
-    <img [src]="course().image"/>
+    <ng-content select="appThumbnailArea"></ng-content>
+    <ng-content ></ng-content>
     <div class="course-status">
       New
     </div>
   </div>
-  <ng-content></ng-content>
-  <div class="course-footer">
-    <span>🕧 {{ course().timeSpan }}</span>
-    <span>{{course().rank}} ⭐</span>
+  <ng-content select="appTitleArea"></ng-content>
+  <div>
+   <ng-content select="appFooterArea"></ng-content>
   </div>
 </div>
