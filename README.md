@@ -1,4 +1,18 @@
-# PlayWithContentProjection
+> [!NOTE]
+> This repository contains the source code for the article: **[Creating Dynamic and Flexible Components with Angular Content Projection](https://www.telerik.com/blogs/creating-dynamic-flexible-components-angular-content-projection)** originally published on [Telerik Blogs](https://www.telerik.com/blogs).
+
+# Creating Dynamic and Flexible Components with Angular Content Projection
+
+## Project Summary
+Learn how to use single and multi-slot content projection in Angular to build reusable and highly flexible components.
+
+## How to Run
+### Installation
+1. `npm install` 
+
+### Running
+1. `ng serve` 
+2. Observe how content is projected into different slots of the card component.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
@@ -25,3 +39,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+---
+Stay connected: [@danywalls](https://twitter.com/danywalls)
