@@ -14,6 +14,17 @@ Learn how to use single and multi-slot content projection in Angular to build re
 1. `ng serve` 
 2. Observe how content is projected into different slots of the card component.
 
+## Project Summary
+Learn how to use single and multi-slot content projection in Angular to build reusable and highly flexible components.
+
+## How to Run
+### Installation
+1. `npm install` 
+
+### Running
+1. `ng serve` 
+2. Observe how content is projected into different slots of the card component.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
 ## Development server
